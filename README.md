@@ -31,3 +31,6 @@ Analyzed 284,807 real-world credit card transactions to detect fraudulent activi
 -  Jupyter Notebook
 -  Pandas
 
+
+## Dataset
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
