@@ -1,0 +1,2125 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='creditcard_clean' inline='true' name='federated.1shkwn41g7g9mk1gw0ebo1uv59qa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='creditcard_clean' name='textscan.16igs290uf6j0b11jb1wu1we3cdy'>
+            <connection class='textscan' directory='D:/Data_analysis_project/financial_fraud_detection/Data' filename='creditcard_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16igs290uf6j0b11jb1wu1we3cdy' name='creditcard_clean.csv' table='[creditcard_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='Time' ordinal='0' />
+            <column datatype='real' name='V1' ordinal='1' />
+            <column datatype='real' name='V2' ordinal='2' />
+            <column datatype='real' name='V3' ordinal='3' />
+            <column datatype='real' name='V4' ordinal='4' />
+            <column datatype='real' name='V5' ordinal='5' />
+            <column datatype='real' name='V6' ordinal='6' />
+            <column datatype='real' name='V7' ordinal='7' />
+            <column datatype='real' name='V8' ordinal='8' />
+            <column datatype='real' name='V9' ordinal='9' />
+            <column datatype='real' name='V10' ordinal='10' />
+            <column datatype='real' name='V11' ordinal='11' />
+            <column datatype='real' name='V12' ordinal='12' />
+            <column datatype='real' name='V13' ordinal='13' />
+            <column datatype='real' name='V14' ordinal='14' />
+            <column datatype='real' name='V15' ordinal='15' />
+            <column datatype='real' name='V16' ordinal='16' />
+            <column datatype='real' name='V17' ordinal='17' />
+            <column datatype='real' name='V18' ordinal='18' />
+            <column datatype='real' name='V19' ordinal='19' />
+            <column datatype='real' name='V20' ordinal='20' />
+            <column datatype='real' name='V21' ordinal='21' />
+            <column datatype='real' name='V22' ordinal='22' />
+            <column datatype='real' name='V23' ordinal='23' />
+            <column datatype='real' name='V24' ordinal='24' />
+            <column datatype='real' name='V25' ordinal='25' />
+            <column datatype='real' name='V26' ordinal='26' />
+            <column datatype='real' name='V27' ordinal='27' />
+            <column datatype='real' name='V28' ordinal='28' />
+            <column datatype='real' name='Amount' ordinal='29' />
+            <column datatype='integer' name='Class' ordinal='30' />
+            <column datatype='integer' name='Hour' ordinal='31' />
+            <column datatype='string' name='Transaction_Type' ordinal='32' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V1]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V2]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V3]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V4]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V5]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V5</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V6]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V6</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V7]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V7</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V8</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V8]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V8</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V9</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V9]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V9</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V10]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V10</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V11</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V11]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V11</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V12</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V12]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V12</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V13</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V13]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V13</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V14]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V14</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V15</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V15]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V15</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V16</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V16]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V16</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V17</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V17]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V17</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V18</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V18]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V18</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V19</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V19]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V19</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V20</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V20]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V20</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V21</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V21]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V21</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V22</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V22]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V22</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V23</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V23]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V23</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V24</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V24]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V24</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V25</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V25]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V25</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V26</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V26]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V26</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V27</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V27]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V27</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V28</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[V28]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>V28</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Amount]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>Amount</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Class]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>Class</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction_Type]</local-name>
+            <parent-name>[creditcard_clean.csv]</parent-name>
+            <remote-alias>Transaction_Type</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+      <column caption='creditcard_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]' role='measure' type='quantitative' />
+      <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/SARTHA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0v03vh00eqz1j2183xg721lffa6m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/03/2026 03:12:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>0</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>209354</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V1</remote-alias>
+              <ordinal>1</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V2</remote-alias>
+              <ordinal>2</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V3</remote-alias>
+              <ordinal>3</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V4</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V4</remote-alias>
+              <ordinal>4</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V5</remote-alias>
+              <ordinal>5</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V6</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V6</remote-alias>
+              <ordinal>6</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V7</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V7</remote-alias>
+              <ordinal>7</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V8</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V8</remote-alias>
+              <ordinal>8</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V9</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V9]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V9</remote-alias>
+              <ordinal>9</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V10</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V10</remote-alias>
+              <ordinal>10</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V11</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V11]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V11</remote-alias>
+              <ordinal>11</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V12</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V12]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V12</remote-alias>
+              <ordinal>12</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V13</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V13]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V13</remote-alias>
+              <ordinal>13</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V14</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V14]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V14</remote-alias>
+              <ordinal>14</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V15</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V15]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V15</remote-alias>
+              <ordinal>15</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V16</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V16]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V16</remote-alias>
+              <ordinal>16</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V17</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V17]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V17</remote-alias>
+              <ordinal>17</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V18</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V18</remote-alias>
+              <ordinal>18</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V19</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V19]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V19</remote-alias>
+              <ordinal>19</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V20</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V20]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V20</remote-alias>
+              <ordinal>20</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V21</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V21]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V21</remote-alias>
+              <ordinal>21</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V22</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V22]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V22</remote-alias>
+              <ordinal>22</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V23</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V23]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V23</remote-alias>
+              <ordinal>23</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V24</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V24]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V24</remote-alias>
+              <ordinal>24</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V25</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V25]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V25</remote-alias>
+              <ordinal>25</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V26</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V26]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V26</remote-alias>
+              <ordinal>26</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V27</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V27]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V27</remote-alias>
+              <ordinal>27</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>V28</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[V28]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>V28</remote-alias>
+              <ordinal>28</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>284807</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount</remote-alias>
+              <ordinal>29</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18936</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Class</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Class</remote-alias>
+              <ordinal>30</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hour</remote-alias>
+              <ordinal>31</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Transaction_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Transaction_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Transaction_Type</remote-alias>
+              <ordinal>32</ordinal>
+              <family>creditcard_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Transaction_Type:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Legit&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fraud&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nepal&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='creditcard_clean.csv' id='creditcard_clean.csv_8B2BB1E142AA48B381DF287C9C8A4F0F'>
+            <properties context=''>
+              <relation connection='textscan.16igs290uf6j0b11jb1wu1we3cdy' name='creditcard_clean.csv' table='[creditcard_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='Time' ordinal='0' />
+                  <column datatype='real' name='V1' ordinal='1' />
+                  <column datatype='real' name='V2' ordinal='2' />
+                  <column datatype='real' name='V3' ordinal='3' />
+                  <column datatype='real' name='V4' ordinal='4' />
+                  <column datatype='real' name='V5' ordinal='5' />
+                  <column datatype='real' name='V6' ordinal='6' />
+                  <column datatype='real' name='V7' ordinal='7' />
+                  <column datatype='real' name='V8' ordinal='8' />
+                  <column datatype='real' name='V9' ordinal='9' />
+                  <column datatype='real' name='V10' ordinal='10' />
+                  <column datatype='real' name='V11' ordinal='11' />
+                  <column datatype='real' name='V12' ordinal='12' />
+                  <column datatype='real' name='V13' ordinal='13' />
+                  <column datatype='real' name='V14' ordinal='14' />
+                  <column datatype='real' name='V15' ordinal='15' />
+                  <column datatype='real' name='V16' ordinal='16' />
+                  <column datatype='real' name='V17' ordinal='17' />
+                  <column datatype='real' name='V18' ordinal='18' />
+                  <column datatype='real' name='V19' ordinal='19' />
+                  <column datatype='real' name='V20' ordinal='20' />
+                  <column datatype='real' name='V21' ordinal='21' />
+                  <column datatype='real' name='V22' ordinal='22' />
+                  <column datatype='real' name='V23' ordinal='23' />
+                  <column datatype='real' name='V24' ordinal='24' />
+                  <column datatype='real' name='V25' ordinal='25' />
+                  <column datatype='real' name='V26' ordinal='26' />
+                  <column datatype='real' name='V27' ordinal='27' />
+                  <column datatype='real' name='V28' ordinal='28' />
+                  <column datatype='real' name='Amount' ordinal='29' />
+                  <column datatype='integer' name='Class' ordinal='30' />
+                  <column datatype='integer' name='Hour' ordinal='31' />
+                  <column datatype='string' name='Transaction_Type' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Fraud By Hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcard_clean' name='federated.1shkwn41g7g9mk1gw0ebo1uv59qa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1shkwn41g7g9mk1gw0ebo1uv59qa'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Hour]' role='measure' type='quantitative' />
+            <column-instance column='[Amount]' derivation='Count' name='[cnt:Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='Sum' name='[sum:Hour:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]' scope='rows' value='Amount' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Hour:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Hour:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]</rows>
+        <cols>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Hour:qk]</cols>
+      </table>
+      <simple-id uuid='{36606A62-D191-4CBD-9BAA-4188B743294D}' />
+    </worksheet>
+    <worksheet name='Fraud vs Legit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcard_clean' name='federated.1shkwn41g7g9mk1gw0ebo1uv59qa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1shkwn41g7g9mk1gw0ebo1uv59qa'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Amount]' derivation='Count' name='[cnt:Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Transaction_Type:nk]' member='&quot;Fraud&quot;' />
+              <groupfilter function='member' level='[none:Transaction_Type:nk]' member='&quot;Legit&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' value='33' />
+            <format attr='title' class='0' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]' scope='rows' value='Amount' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' value='225' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]</rows>
+        <cols>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]</field>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>284315</value>
+                <value>&quot;Legit&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]</field>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>492</value>
+                <value>&quot;Fraud&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{2E4768A5-9480-4E88-B623-E62C5C046817}' />
+    </worksheet>
+    <worksheet name='Fraud vs Legit Amount'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcard_clean' name='federated.1shkwn41g7g9mk1gw0ebo1uv59qa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1shkwn41g7g9mk1gw0ebo1uv59qa'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Amount]' derivation='Sum' name='[sum:Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' value='227' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='12581295.005000001' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]' max='25102462.039999999' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#e15759</color>
+                <color>#e06365</color>
+                <color>#df6f70</color>
+                <color>#de7b7c</color>
+                <color>#de8788</color>
+                <color>#dd9394</color>
+                <color>#dc9fa0</color>
+                <color>#dbaaab</color>
+                <color>#dbb6b7</color>
+                <color>#dac2c2</color>
+                <color>#d9cdcd</color>
+                <color>#d9d9d9</color>
+                <color>#c4cbd1</color>
+                <color>#b1beca</color>
+                <color>#9eb1c3</color>
+                <color>#8da5bc</color>
+                <color>#7c99b5</color>
+                <color>#6c8ead</color>
+                <color>#5d83a6</color>
+                <color>#4f789f</color>
+                <color>#426e98</color>
+                <color>#366591</color>
+                <color>#2b5c8a</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]</rows>
+        <cols>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Legit&quot;</value>
+                <value>25102462.040004008</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</field>
+                  <field>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Fraud&quot;</value>
+                <value>60127.969999999979</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{4E103DCC-BE11-4860-A48D-288F11C446CE}' />
+    </worksheet>
+    <worksheet name='KPI Numbers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='creditcard_clean' name='federated.1shkwn41g7g9mk1gw0ebo1uv59qa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1shkwn41g7g9mk1gw0ebo1uv59qa'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Transaction Type' datatype='string' name='[Transaction_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Amount]' derivation='Count' name='[cnt:Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Transaction_Type]' derivation='None' name='[none:Transaction_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Transaction_Type:nk]' member='&quot;Fraud&quot;' />
+              <groupfilter function='member' level='[none:Transaction_Type:nk]' member='&quot;Legit&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='221' />
+            <format attr='height' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' value='78' />
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' value='#00aaff' />
+            <format attr='band-color' scope='rows' value='#ff5500' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[cnt:Amount:qk]' />
+              <color column='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{472D66CD-122F-48FB-A908-7F5B11088B46}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98004' id='18' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+            <zone h='98004' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='998'>
+              <zone h='98004' id='5' type-v2='layout-basic' w='73692' x='1231' y='998'>
+                <zone h='48993' id='3' name='Fraud vs Legit' w='36845' x='1231' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49011' id='9' name='Fraud vs Legit Amount' w='36845' x='1231' y='49991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48993' id='11' name='Fraud By Hour' w='36847' x='38076' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49011' id='13' name='KPI Numbers' w='36847' x='38076' y='49991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='155' h='98004' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='23846' x='74923' y='998'>
+                <zone h='8978' id='8' name='Fraud vs Legit' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type-v2='color' w='23846' x='74923' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='9103' id='10' name='Fraud vs Legit Amount' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]' type-v2='color' w='23846' x='74923' y='9976'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='9103' id='12' name='Fraud By Hour' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Hour:qk]' type-v2='color' w='23846' x='74923' y='19079'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8978' id='14' name='KPI Numbers' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type-v2='color' w='23846' x='74923' y='28182'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='19' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+                <zone fixed-size='280' h='48993' id='3' is-fixed='true' name='Fraud vs Legit' w='36845' x='1231' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8978' id='8' name='Fraud vs Legit' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type-v2='color' w='23846' x='74923' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48993' id='11' is-fixed='true' name='Fraud By Hour' w='36847' x='38076' y='998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9103' id='12' name='Fraud By Hour' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Hour:qk]' type-v2='color' w='23846' x='74923' y='19079'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49011' id='9' is-fixed='true' name='Fraud vs Legit Amount' w='36845' x='1231' y='49991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9103' id='10' name='Fraud vs Legit Amount' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]' type-v2='color' w='23846' x='74923' y='9976'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49011' id='13' is-fixed='true' name='KPI Numbers' w='36847' x='38076' y='49991'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8978' id='14' name='KPI Numbers' pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type-v2='color' w='23846' x='74923' y='28182'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5196CA7D-47D6-4E52-960A-114CC5128797}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Fraud vs Legit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B847BB3-0B66-47B0-8148-9AAA94267306}' />
+    </window>
+    <window class='worksheet' name='Fraud vs Legit Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Amount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{096D6918-2544-4F6F-A48C-0DC5F7ABD260}' />
+    </window>
+    <window class='worksheet' name='Fraud By Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[sum:Hour:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A42FDF0E-83AB-4698-8C61-4C531035B77A}' />
+    </window>
+    <window class='worksheet' name='KPI Numbers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1shkwn41g7g9mk1gw0ebo1uv59qa].[none:Transaction_Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{8F8BFFFC-FBA2-4733-AA38-27439F343C0C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Fraud By Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud vs Legit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fraud vs Legit Amount'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Numbers' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AE75FCDE-9615-43D2-8BCB-5D96871D4C8F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Fraud vs Legit' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='180' name='KPI Numbers' width='192'>
+      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
+      61xdAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
