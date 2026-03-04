@@ -23,3 +23,11 @@ Analyzed 284,807 real-world credit card transactions to detect fraudulent activi
   
 - Despite low fraud rate, financial impact justifies 
   dedicated real-time monitoring systems
+
+
+## Tools
+- Python
+-  Tableau
+-  Jupyter Notebook
+-  Pandas
+
